@@ -1,0 +1,23 @@
+/* Colors */
+html {
+    background: #000;
+    color: #fff;
+}
+
+/* Font */
+html {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: calc(.5em + 1vw);
+}
+
+/* Centering */
+html {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Paragraph wrap */
+main {
+    width: 50vw;
+}
