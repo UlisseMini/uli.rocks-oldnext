@@ -22,6 +22,11 @@ main {
     width: 60vw;
 }
 
+ol {
+    list-style-position: inside;
+    padding: 0;
+}
+
 ol li {
     margin-top: .6rem;
 }
