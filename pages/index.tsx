@@ -1,10 +1,13 @@
 import Head from 'next/head'
 
+const github = 'https://github.com/UlisseMini'
+const gitlab = 'https://gitlab.com/0u'
+
 export default function Home () {
   return (
-    <div className='container'>
+    <>
       <Head>
-        <title>Uli.rocks</title>
+        <title>Uli</title>
         <link rel='icon' href='/favicon.ico' />
         <meta name='viewport' content='width=device-width, initial-scale=1.0' />
       </Head>
@@ -14,18 +17,24 @@ export default function Home () {
       </header>
 
       <main>
-        <p>This is my quite boring body</p>
-        <p>I would like to talk about quite boring things</p>
         <p>
-          Perhaps a longer paragraph is due, I must find out how
-          the browser deals with long paragraphs.
+          My name is Ulisse Mini, I'm a 15 year old software developer
+          with a focus on python, javascript, go and rust.
         </p>
 
         <p>
-          So the browser wraps paragraphs, but only when they get REALLY long
-          Looks like I can fix that by setting width to a smaller value though.
+          If you want to contact me here are a few ways
+        </p>
+        <ol>
+          <li>Matrix: <code>valvate:matrix.org</code></li>
+          <li>Discord: <code>uli#4334</code></li>
+          <li>Gmail: <code>ulisse.mini@gmail.com</code></li>
+        </ol>
+        <p>
+          You can find my projects on <a href={github}>github </a>
+          and <a href={gitlab}>gitlab</a>.
         </p>
       </main>
-    </div>
+    </>
   )
 }

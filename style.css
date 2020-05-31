@@ -19,5 +19,27 @@ html {
 
 /* Paragraph wrap */
 main {
-    width: 50vw;
+    width: 60vw;
+}
+
+ol li {
+    margin-top: .6rem;
+}
+
+/* Code styling */
+code {
+    background: #222;
+    color: #0f0;
+    padding: .2rem;
+    border-radius: 5px;
+}
+
+/* Link styling */
+a {
+    color: #0f0;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
