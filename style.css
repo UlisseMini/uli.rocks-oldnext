@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap');
+
 /* Colors */
 html {
     background: #000;
@@ -6,8 +8,8 @@ html {
 
 /* Font */
 html {
-    font-family: 'Courier New', Courier, monospace;
-    font-size: calc(.5em + 1vw);
+    font-family: 'Inconsolata', monospace;
+    font-size: calc(.5em + .5vw + 1vh);
 }
 
 /* Centering */
@@ -19,7 +21,14 @@ html {
 
 /* Paragraph wrap */
 main {
-    width: 60vw;
+    width: 50vw;
+}
+
+/* On phones use more of the space. */
+@media screen and (max-width: 400px) {
+  main {
+    width: 95vw;
+  }
 }
 
 ol {
