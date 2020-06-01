@@ -44,7 +44,7 @@ export async function getPostData (id: string): Promise<[PostData, String]> {
     id: id,
     date: matterResult.data.date,
     title: matterResult.data.title
-  }, fileContents]
+  }, matterResult.content]
 }
 
 export async function getPostDataAndHtml (id: string) {
