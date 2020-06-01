@@ -55,7 +55,7 @@ export default function Home ({ allPostsData }) {
 }
 
 export const getStaticProps = async context => {
-  const allPostsData = getSortedPostsData()
+  const allPostsData = await getSortedPostsData()
   return {
     props: {
       allPostsData: allPostsData

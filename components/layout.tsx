@@ -6,7 +6,7 @@ const title = 'Uli'
 const description = "Ulisse Mini's home on the internet"
 
 interface LayoutProps {
-  children: JSX.Element,
+  children: any,
   home: boolean,
 }
 
