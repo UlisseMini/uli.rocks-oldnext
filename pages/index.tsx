@@ -31,8 +31,8 @@ export default function Home () {
           <li>Gmail: <code>ulisse.mini@gmail.com</code></li>
         </ol>
         <p>
-          You can find my projects on <a href={github}>github </a>
-          and <a href={gitlab}>gitlab</a>.
+          You can find my projects
+          on <a href={github}>github</a> and <a href={gitlab}>gitlab</a>.
         </p>
       </main>
     </>
