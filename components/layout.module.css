@@ -1,0 +1,11 @@
+.main {
+    margin: 0 auto; /* Centering */
+    width: 50vw;    /* Paragraph wrap */
+}
+
+/* On phones use more of the space. */
+@media screen and (max-width: 400px) {
+  .main {
+    width: 95vw;
+  }
+}
