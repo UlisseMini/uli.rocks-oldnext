@@ -27,3 +27,11 @@
     padding: .1rem;
     border-radius: 5px;
 }
+
+.profile {
+  margin: 0 auto;
+  display: block;
+  width: 15vmin;
+  height: 15vmin;
+  border-radius: 9999px;
+}

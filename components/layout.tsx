@@ -27,16 +27,15 @@ export default function Layout ({ children, home }: LayoutProps) {
       </Head>
 
       <header>
-        {home ? (
-          <>
-          </>
-        ) : (
-          <>
-            <Link href='/'>
-              <a>../home</a>
-            </Link>
-          </>
-        )}
+        <Link href='/'>
+          <a>
+            <img
+              alt='profile'
+              src='/profile.png'
+              className={styles.profile}
+            />
+          </a>
+        </Link>
       </header>
 
       <main className={home ? `${styles.main} ${styles.home}` : styles.main}>
