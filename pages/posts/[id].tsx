@@ -3,13 +3,16 @@ import Date from '../../components/date';
 import Layout from "../../components/layout";
 import { getAllPostIds, getPostData, getPostDataAndHtml } from "../../lib/posts";
 import Link from "next/link";
-import { GetStaticPaths } from "next";
 
 export default function Post ({ postData }) {
   return (
     <Layout home={false}>
       <Head>
         <title>{postData.title}</title>
+        <link
+          rel="stylesheet"
+          href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/10.0.3/styles/railscasts.min.css"
+        />
       </Head>
       <article>
         <h1>{postData.title}</h1>
@@ -22,7 +25,7 @@ export default function Post ({ postData }) {
   )
 }
 
-export const getStaticPaths: GetStaticPaths = async () => {
+export const getStaticPaths = async () => {
   const postPaths = getAllPostIds()
   return {
     paths: postPaths.map(path => {

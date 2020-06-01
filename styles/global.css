@@ -5,15 +5,13 @@ html, body {
     margin: 0;
     padding: 0;
 
-    font-family: 'Inconsolata', monospace;
-    font-size: calc(.5em + .5vw + 1vh);
-
     background: #000;
     color: #fff;
 }
 
-/* All hail border-box! */
 * {
+    font-family: 'Inconsolata', monospace;
+    font-size: calc(.5em + .5vw + .5vh);
     box-sizing: border-box;
 }
 
@@ -35,7 +33,7 @@ li {
 code {
     background: #222;
     color: #0f0;
-    padding: .2rem;
+    padding: .1rem;
     border-radius: 5px;
 }
 

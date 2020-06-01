@@ -3,6 +3,7 @@ import path from 'path'
 import matter from 'gray-matter'
 import remark from 'remark'
 import html from 'remark-html'
+import highlight from 'remark-highlight.js'
 
 const postsDirectory = path.join(process.cwd(), 'posts')
 
@@ -52,6 +53,7 @@ export async function getPostDataAndHtml (id: string) {
 
   // Use remark to generate html from the markdown
   const processedContent = await remark()
+    .use(highlight)
     .use(html)
     .process(fileContents)
   const contentHtml = processedContent.toString()
