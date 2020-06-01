@@ -7,7 +7,7 @@ date: "2020-06-01"
 
 Just testing my nextjs blogging setup
 
-Source code is [here](https://github.com/UlisseMini/uli.rocks)
+Source code is [here](https://github.com/UlisseMini/uli.rocks)!
 
 some `/code/`
 ```py
@@ -16,3 +16,5 @@ def main():
 
 if __name__ == '__main__': main()
 ```
+
+*italics* **bold** ***bold italics*** ~~strikethrough~~
