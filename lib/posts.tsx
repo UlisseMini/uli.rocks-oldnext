@@ -1,9 +1,8 @@
 import fs from 'fs'
 import path from 'path'
 import matter from 'gray-matter'
-import remark from 'remark'
-import html from 'remark-html'
-import highlight from 'remark-highlight.js'
+import marked from 'marked'
+import hljs from 'highlight.js'
 
 const postsDirectory = path.join(process.cwd(), 'posts')
 
@@ -52,10 +51,12 @@ export async function getPostDataAndHtml (id: string) {
   const [postData, fileContents] = await getPostData(id)
 
   // Use remark to generate html from the markdown
-  const processedContent = await remark()
-    .use(highlight)
-    .use(html)
-    .process(fileContents)
+  const processedContent = marked(fileContents, {
+    highlight: function (code, lang) {
+      const validLanguage = hljs.getLanguage(lang) ? lang : 'plaintext'
+      return hljs.highlight(validLanguage, code).value
+    }
+  })
   const contentHtml = processedContent.toString()
 
   return {

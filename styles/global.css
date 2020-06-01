@@ -29,14 +29,6 @@ li {
     margin-top: .6rem;
 }
 
-/* Code styling */
-code {
-    background: #222;
-    color: #0f0;
-    padding: .1rem;
-    border-radius: 5px;
-}
-
 /* Link styling */
 a {
     color: #0f0;
@@ -45,4 +37,10 @@ a {
 
 a:hover {
     text-decoration: underline;
+}
+
+pre {
+    padding: 2vmin;
+    border-radius: .5vmin;
+    background: #222;
 }

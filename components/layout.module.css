@@ -19,3 +19,11 @@
 .header a {
     margin-right: 1rem;
 }
+
+/* Code styling, on blog posts we let highlight.js handle this. */
+.home code {
+    background: #222;
+    color: #0f0;
+    padding: .1rem;
+    border-radius: 5px;
+}

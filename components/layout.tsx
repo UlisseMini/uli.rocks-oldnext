@@ -39,7 +39,7 @@ export default function Layout ({ children, home }: LayoutProps) {
         )}
       </header>
 
-      <main className={styles.main}>
+      <main className={home ? `${styles.main} ${styles.home}` : styles.main}>
         {children}
       </main>
     </div>
