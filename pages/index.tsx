@@ -1,4 +1,7 @@
 import Layout from '../components/layout'
+import { getSortedPostsData } from '../lib/posts'
+import Link from 'next/link'
+import Date from '../components/date'
 
 const github = 'https://github.com/UlisseMini'
 const gitlab = 'https://gitlab.com/0u'
@@ -6,9 +9,9 @@ const email = 'ulisse.mini@gmail.com'
 const discord = 'uli#4334'
 const matrix = 'valvate:matrix.org'
 
-export default function Home () {
+export default function Home ({ allPostsData }) {
   return (
-    <Layout>
+    <Layout home>
       <h1>Hello!</h1>
 
       <p>
@@ -30,6 +33,32 @@ export default function Home () {
         You can find my projects
         on <a href={github}>github</a> and <a href={gitlab}>gitlab</a>.
       </p>
+
+      <h2>Posts</h2>
+      <ul>
+        {allPostsData.map(({ id, date, title }, key) => {
+          return (
+            <li key={key}>
+              <Link href='/posts/[id]' as={`/posts/${id}`}>
+                <a>{title}</a>
+              </Link>
+              <br />
+              <small>
+                <Date dateString={date} />
+              </small>
+            </li>
+          )
+        })}
+      </ul>
     </Layout>
   )
+}
+
+export const getStaticProps = async context => {
+  const allPostsData = getSortedPostsData()
+  return {
+    props: {
+      allPostsData: allPostsData
+    }
+  }
 }

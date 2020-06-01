@@ -9,3 +9,13 @@
     width: 95vw;
   }
 }
+
+.header {
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    border-bottom: 3px solid #0f0;
+}
+
+.header a {
+    margin-right: 1rem;
+}

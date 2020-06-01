@@ -5,7 +5,12 @@ import Link from 'next/link'
 const title = 'Uli'
 const description = "Ulisse Mini's home on the internet"
 
-export default function Layout ({ children }) {
+interface LayoutProps {
+  children: JSX.Element,
+  home: boolean,
+}
+
+export default function Layout ({ children, home }: LayoutProps) {
   return (
     <div className={styles.container}>
 
@@ -20,6 +25,19 @@ export default function Layout ({ children }) {
         <meta name='og:title' content={title} />
         <meta name='twitter:card' content='summary' />
       </Head>
+
+      <header>
+        {home ? (
+          <>
+          </>
+        ) : (
+          <>
+            <Link href='/'>
+              <a>../home</a>
+            </Link>
+          </>
+        )}
+      </header>
 
       <main className={styles.main}>
         {children}
