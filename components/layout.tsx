@@ -3,7 +3,6 @@ import Head from 'next/head'
 import Link from 'next/link'
 
 const title = 'Uli'
-const description = "Ulisse Mini's home on the internet"
 
 interface LayoutProps {
   children: any,
@@ -18,12 +17,6 @@ export default function Layout ({ children, home }: LayoutProps) {
         <title>{title}</title>
         <link rel='icon' href='/favicon.ico' />
         <meta name='viewport' content='width=device-width, initial-scale=1.0' />
-        <meta
-          name='description'
-          content={description}
-        />
-        <meta name='og:title' content={title} />
-        <meta name='twitter:card' content='summary' />
       </Head>
 
       <header>
