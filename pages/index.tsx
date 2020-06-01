@@ -2,6 +2,9 @@ import Head from 'next/head'
 
 const github = 'https://github.com/UlisseMini'
 const gitlab = 'https://gitlab.com/0u'
+const email = 'ulisse.mini@gmail.com'
+const discord = 'uli#4334'
+const matrix = 'valvate:matrix.org'
 
 export default function Home () {
   return (
@@ -26,9 +29,11 @@ export default function Home () {
           If you want to contact me here are a few ways
         </p>
         <ol>
-          <li>Matrix: <code>valvate:matrix.org</code></li>
-          <li>Discord: <code>uli#4334</code></li>
-          <li>Gmail: <code>ulisse.mini@gmail.com</code></li>
+          <li>Matrix: <code>{matrix}</code></li>
+          <li>Discord: <code>{discord}</code></li>
+          <li>
+            Gmail: <a href={`mailto:${email}`}><code>{email}</code></a>
+          </li>
         </ol>
         <p>
           You can find my projects
