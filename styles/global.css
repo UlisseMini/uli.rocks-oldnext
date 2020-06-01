@@ -9,9 +9,12 @@ html, body {
     color: #fff;
 }
 
-* {
+body, code {
     font-family: 'Inconsolata', monospace;
     font-size: calc(.5em + .5vw + .5vh);
+}
+
+* {
     box-sizing: border-box;
 }
 
