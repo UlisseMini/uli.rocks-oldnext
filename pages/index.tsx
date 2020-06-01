@@ -32,7 +32,7 @@ export default function Home () {
           <li>Matrix: <code>{matrix}</code></li>
           <li>Discord: <code>{discord}</code></li>
           <li>
-            Gmail: <a href={`mailto:${email}`}><code>{email}</code></a>
+            Email: <a href={`mailto:${email}`}><code>{email}</code></a>
           </li>
         </ol>
         <p>
