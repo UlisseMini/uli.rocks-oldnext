@@ -20,18 +20,10 @@
     margin-right: 1rem;
 }
 
-/* Code styling, on blog posts we let highlight.js handle this. */
-.home code {
-    background: #222;
-    color: #0f0;
-    padding: .1rem;
-    border-radius: 5px;
-}
-
 .profile {
   margin: 0 auto;
   display: block;
-  width: 15vmin;
-  height: 15vmin;
+  width: 6em;
+  height: 6em;
   border-radius: 9999px;
 }

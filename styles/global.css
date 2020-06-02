@@ -47,3 +47,17 @@ pre {
     background: #222;
     white-space: pre-wrap;
 }
+
+/* My hope is that this code is so awful I am never allowed to write css again */
+code {
+    color: #0f0;
+    background: #222;
+    padding: .1rem;
+    border-radius: 5px;
+}
+
+pre code {
+    color: #fff;
+    padding: 0;
+    border-radius: 0;
+}
