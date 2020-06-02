@@ -11,6 +11,7 @@ html, body {
 
 body, code {
     font-family: 'Inconsolata', monospace;
+    line-height: 1.2em;
 }
 
 * {
