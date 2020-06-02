@@ -1,12 +1,14 @@
 .main {
     margin: 0 auto; /* Centering */
-    width: 600px;    /* Paragraph wrap */
+    width: 600px;   /* Paragraph wrap */
 }
 
 /* On phones use more of the space. */
 @media screen and (max-width: 400px) {
   .main {
-    width: 95%;
+    width: 100%;
+    padding-left: .5em;
+    padding-right: .5em;
   }
 }
 
