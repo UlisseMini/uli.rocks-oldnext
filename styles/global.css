@@ -5,13 +5,12 @@ html, body {
     margin: 0;
     padding: 0;
 
-    background: #000;
+    background: #111;
     color: #fff;
 }
 
 body, code {
     font-family: 'Inconsolata', monospace;
-    font-size: calc(.5em + .5vw + .5vh);
 }
 
 * {
@@ -43,7 +42,8 @@ a:hover {
 }
 
 pre {
-    padding: 2vmin;
-    border-radius: .5vmin;
+    padding: .5em;
+    border-radius: .3em;
     background: #222;
+    white-space: pre-wrap;
 }
