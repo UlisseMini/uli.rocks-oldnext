@@ -18,7 +18,7 @@ import chess
 import random
 ```
 
-And a function that returns the length of a random game, and the average move count.
+And a function that returns the length of a random game, and the average amount of legal moves.
 ```py
 def play_random_game() -> (int, int):
     b = chess.Board()
