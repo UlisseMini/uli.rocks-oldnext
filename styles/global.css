@@ -11,7 +11,7 @@ html, body {
 
 body, code {
     font-family: 'Inconsolata', monospace;
-    line-height: 1.2em;
+    line-height: 1.3em;
 }
 
 * {
@@ -53,7 +53,7 @@ pre {
 code {
     color: #0f0;
     background: #222;
-    padding: .1rem;
+    padding: 1px;
     border-radius: 5px;
 }
 
