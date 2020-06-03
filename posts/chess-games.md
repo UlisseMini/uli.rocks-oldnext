@@ -1,15 +1,12 @@
---
+---
 title: "How many possible chess games are there?"
 date: "2020-06-02"
 ---
 
-I'm mostly making this post because of [this](https://www.youtube.com/watch?v=Km024eldY1A) numberphile video,
-because I think they made some false assumptions which led them to underestimating the possible number of games.
+Most possible chess games are totally random.
+For example, say in every chess position on average there are 3 good moves, on average there are around 22 possible moves!
 
-they draw their statistics for the average number of legal moves and the average lengths of games
-from games played by humans. aka games played by intelligent actors attempting to win.
-
-In reality, the vast majority of chess games are random. thus we can come up with a more accurate estimate by writing a program
+We can come up with an estimate by writing a program
 to compute the average number of legal moves, and the average game length when playing randomly.
 
 So lets do it! I'm going to be using the [python-chess](https://pypi.org/project/python-chess) library,
