@@ -4,7 +4,7 @@ date: "2020-06-02"
 ---
 
 Most possible chess games are totally random.
-For example, say in every chess position on average there are 3 good moves, on average there are around 22 possible moves!
+For example, say in every chess position on average there are 3 good moves, on average there are around 23 possible moves!
 
 We can come up with an estimate by writing a program
 to compute the average number of legal moves, and the average game length when playing randomly.
