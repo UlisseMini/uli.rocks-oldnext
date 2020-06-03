@@ -4,7 +4,7 @@ date: "2020-06-02"
 ---
 
 I'm mostly making this post because of [this](https://www.youtube.com/watch?v=Km024eldY1A) numberphile video,
-while entertaining, it is vastly inaccurate.
+because I think they made some false assumptions which led them to underestimating the possible number of games.
 
 they draw their statistics for the average number of legal moves and the average lengths of games
 from games played by humans. aka games played by intelligent actors attempting to win.
