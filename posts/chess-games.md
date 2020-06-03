@@ -1,4 +1,4 @@
----
+--
 title: "How many possible chess games are there?"
 date: "2020-06-02"
 ---
@@ -53,6 +53,6 @@ print(f'avg_length: {avg_length} avg_legal: {avg_legal}')
 ```
 
 For me this gives `avg_length: 355.9369 avg_legal: 23.09636004565067`
-thus, there are approximately `355 ^ 23` possible chess games.
+thus, there are approximately `23 ^ 355` possible chess games.
 
 In future I might rewrite this in rust and average a larger amount of games, but for now this should be a decent estimate.
