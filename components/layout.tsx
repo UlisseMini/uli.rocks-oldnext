@@ -9,7 +9,7 @@ interface LayoutProps {
   home: boolean,
 }
 
-export default function Layout ({ children, home }: LayoutProps) {
+export default function Layout ({ children }: LayoutProps) {
   return (
     <div className={styles.container}>
 
@@ -31,7 +31,7 @@ export default function Layout ({ children, home }: LayoutProps) {
         </Link>
       </header>
 
-      <main className={home ? `${styles.main} ${styles.home}` : styles.main}>
+      <main className={`${styles.main}`}>
         {children}
       </main>
     </div>

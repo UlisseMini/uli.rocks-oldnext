@@ -11,7 +11,7 @@ const matrix = 'valvate:matrix.org'
 
 export default function Home ({ allPostsData }) {
   return (
-    <Layout home>
+    <Layout>
       <h1>Hello!</h1>
 
       <p>
