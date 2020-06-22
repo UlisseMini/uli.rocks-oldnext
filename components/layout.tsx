@@ -6,7 +6,6 @@ const title = 'Uli'
 
 interface LayoutProps {
   children: any,
-  home: boolean,
 }
 
 export default function Layout ({ children }: LayoutProps) {

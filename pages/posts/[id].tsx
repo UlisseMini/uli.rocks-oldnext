@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export default function Post ({ postData }) {
   return (
-    <Layout home={false}>
+    <Layout>
       <Head>
         <title>{postData.title}</title>
         <link
