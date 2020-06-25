@@ -51,7 +51,7 @@ alias gs="git status"
 set -o vi
 ```
 
-And a minimal vimrc (though I'm using vscode for most code editing now
+And a minimal vimrc (though I'm using vscode for most code editing now)
 ```vim
 set sw=2 ts=2
 set laststatus=1
