@@ -5,7 +5,8 @@ import Date from '../components/date'
 
 const github = 'https://github.com/UlisseMini'
 const gitlab = 'https://gitlab.com/0u'
-const email = 'ulisse.mini@gmail.com'
+const gmail = 'ulisse.mini@gmail.com'
+const email = 'uli@uli.rocks'
 const discord = 'uli#4334'
 const matrix = 'valvate:matrix.org'
 
@@ -27,6 +28,9 @@ export default function Home ({ allPostsData }) {
         <li>Discord: <code>{discord}</code></li>
         <li>
           Email: <a href={`mailto:${email}`}><code>{email}</code></a>
+        </li>
+        <li>
+          Gmail: <a href={`mailto:${gmail}`}><code>{gmail}</code></a>
         </li>
       </ol>
       <p>
