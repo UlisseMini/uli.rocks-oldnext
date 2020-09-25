@@ -16,7 +16,7 @@ export default function Home ({ allPostsData }) {
       <h1>Hello!</h1>
 
       <p>
-        My name is Ulisse Mini, I'm a 15 year old software developer
+        My name is Ulisse Mini, I'm a 16 year old software developer
         with a focus on python, javascript, go and rust.
       </p>
 
