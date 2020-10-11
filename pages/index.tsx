@@ -10,7 +10,7 @@ const email = 'uli@uli.rocks'
 const discord = 'uli#4334'
 const matrix = 'valvate:matrix.org'
 
-export default function Home ({ allPostsData }) {
+export default function Home({ allPostsData }) {
   return (
     <Layout>
       <h1>Hello!</h1>
@@ -36,6 +36,9 @@ export default function Home ({ allPostsData }) {
       <p>
         You can find my projects
         on <a href={github}>github</a> and <a href={gitlab}>gitlab</a>.
+      </p>
+      <p>
+        Or see what I'm working on <Link href='/now'><a>now</a></Link>
       </p>
 
       <h2>Posts</h2>
