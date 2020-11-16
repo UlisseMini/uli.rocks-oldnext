@@ -15,6 +15,7 @@ export default function Now () {
         a project to make connecting with like minded people deliberate as opposed to
         a game of chance. currently very alpha software.
         see my dedicated <a href='https://nerdsniper.net/about'>nerdsniper about page</a>
+        I'm spending ~80% of my time on AI algorithms and math though, nerdsniper is coming along slowly.
       </p>
     </Layout>
   )
