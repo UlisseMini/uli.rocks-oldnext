@@ -1,6 +1,7 @@
 ---
 title: "__index horror"
 date: "2019-08-14"
+draft: false
 ---
 
 # The problem

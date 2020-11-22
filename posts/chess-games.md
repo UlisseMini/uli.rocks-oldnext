@@ -1,6 +1,7 @@
 ---
 title: "How many possible chess games are there?"
 date: "2020-06-02"
+draft: false
 ---
 
 Most possible chess games are totally random.

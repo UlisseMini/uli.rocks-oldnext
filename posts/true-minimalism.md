@@ -1,6 +1,7 @@
 ---
-title: "True minimalism is bloat"
+title: "The hidden costs of archlinux"
 date: "2020-06-24"
+draft: false
 ---
 
 I've been a longtime user of [archlinux](https://archlinux.org), and dwm, people would make fun of me; "wasting my time" they said. "just use ubuntu" they said

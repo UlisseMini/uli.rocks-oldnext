@@ -43,7 +43,7 @@ export default function Home({ allPostsData }) {
 
       <h2>Posts</h2>
       <ul>
-        {allPostsData.map(({ id, date, title }, key) => {
+        {allPostsData.filter(({ draft }) => !draft).map(({ id, date, title }, key) => {
           return (
             <li key={key}>
               <Link href='/posts/[id]' as={`/posts/${id}`}>

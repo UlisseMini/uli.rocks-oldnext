@@ -1,6 +1,7 @@
 ---
 title: "Haskell in a nutshell"
 date: "2020-07-19"
+draft: false
 ---
 
 Hmm, this code is too readable, can it be improved?
