@@ -6,7 +6,7 @@ import hljs from 'highlight.js'
 
 const postsDirectory = path.join(process.cwd(), 'posts')
 
-export async function getSortedPostsData() {
+export async function getSortedPostsData () {
   const ids = getAllPostIds()
   const allPostsData =
     await Promise.all(ids.map(async id => (await getPostData(id))[0]))
@@ -21,7 +21,7 @@ export async function getSortedPostsData() {
   })
 }
 
-export function getAllPostIds() {
+export function getAllPostIds () {
   const fileNames = fs.readdirSync(postsDirectory)
   return fileNames.map(fileName => {
     return fileName.replace(/\.md$/, '')
@@ -35,7 +35,7 @@ interface PostData {
   draft: boolean,
 }
 
-export async function getPostData(id: string): Promise<[PostData, String]> {
+export async function getPostData (id: string): Promise<[PostData, String]> {
   const fullPath = path.join(postsDirectory, `${id}.md`)
   const fileContents = fs.readFileSync(fullPath, 'utf8')
 
@@ -49,7 +49,7 @@ export async function getPostData(id: string): Promise<[PostData, String]> {
   }, matterResult.content]
 }
 
-export async function getPostDataAndHtml(id: string) {
+export async function getPostDataAndHtml (id: string) {
   const [postData, fileContents] = await getPostData(id)
 
   // Use remark to generate html from the markdown
